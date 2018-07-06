@@ -7,7 +7,31 @@
          url('fonts/cac_champagne-webfont.svg#cac_champagneregular') format('svg');
 }
 
+/* Responsive pour écran < 1024px de large */
+@media all and (max-width: 1024px) {
+    .liseret {
+        display: none;
+    }
 
+    .cv header figure {
+        display: initial;
+    }
+
+    .cv section {
+        flex-direction: column;
+    }
+}
+
+
+/* Responsive pour écran > 1024px de large */
+@media all and (min-width: 1024px) {
+    .cv header figure {
+        display: none;
+    }
+}
+
+
+/* Règles CSS communes quelque soit la taille de l'écran' */
 .cv-content {
     display: flex;
     align-items: stretch;
