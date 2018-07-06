@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'cac_champagneregular';
+    src: url('fonts/cac_champagne-webfont.eot');
+    src: url('fonts/cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cac_champagne-webfont.woff') format('woff'),
+         url('fonts/cac_champagne-webfont.ttf') format('truetype'),
+         url('fonts/cac_champagne-webfont.svg#cac_champagneregular') format('svg');
+}
+
+
+body {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+/* change l'alignement de tout le bloc "header" */
+/* ajoute une bordure, une couleur de fond, et une ombre sur le bloc "header" */
+.header {
+    text-align: center;
+
+    border: 2px ridge grey;
+    box-shadow: 3px 3px 4px grey;
+    background-color: #CCCCCC;
+}
+/* la photo du CV contenue dans le bloc "header" est flottante à droite */
+.header figure {
+    float: left;
+}
+
+/* le nom sur le CV utilise une font personnalisée */
+.header h1 {
+    font-family: 'cac_champagneregular', arial, sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+
+/* ajoute une bordure, une image de fond, et une ombre sur le bloc "container" */
+.container {
+    clear: both;
+    padding-left: 10px;
+
+    border: 2px ridge grey;
+    box-shadow: 3px 3px 4px grey;
+    background: url('images/background.jpg') no-repeat center;
+}
+
+/* les titres de parties sont en italic et d'une autre couleur' */
+.container h2 {
+    font-style: italic;
+    color: rgb(97, 69, 106); /* #61456a */
+}
+
+.container ul li .xp-dates {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+blockquote {
+    text-align: right;
+    margin-right: 0;
+    font-style: italic;
+    font-size: 0.8em;
+}
